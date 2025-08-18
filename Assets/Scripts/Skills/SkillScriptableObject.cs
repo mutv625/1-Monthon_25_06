@@ -2,9 +2,9 @@ using UnityEngine;
 
 public abstract class SkillScriptableObject : ScriptableObject
 {
-    private string skillName;
+    public abstract string SkillName { get; }
 
-    private Sprite skillIcon;
+    public abstract Sprite SkillIcon { get; }
 
     public abstract void ExecuteSkill(FighterController user);
 }

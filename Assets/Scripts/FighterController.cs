@@ -4,7 +4,6 @@ using System;
 
 public class FighterController : MonoBehaviour
 {
-    [SerializeField] FighterCore fighterCore;
     [SerializeField] Rigidbody2D rb;
 
     [SerializeField] int playerID;
@@ -13,7 +12,6 @@ public class FighterController : MonoBehaviour
 
     void Start()
     {
-        fighterCore = GetComponent<FighterCore>();
         rb = GetComponent<Rigidbody2D>();
 
         InputProvider.OnMoveKey
@@ -66,6 +64,8 @@ public class FighterController : MonoBehaviour
     }
 
     [SerializeField] SkillScriptableObject[] skills;
+    [SerializeField] 
+
     void Attack()
     {
         // TODO 攻撃処理

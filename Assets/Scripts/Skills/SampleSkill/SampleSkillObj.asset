@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e17d3efa192e7b546b173d5e5c663323, type: 3}
-  m_Name: NewSampleSkill
+  m_Name: SampleSkillObj
   m_EditorClassIdentifier: 
   skillName: Example Skill
   skillIcon: {fileID: 0}

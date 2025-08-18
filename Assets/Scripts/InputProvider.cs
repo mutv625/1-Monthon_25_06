@@ -14,17 +14,10 @@ public enum FighterControl
 
 public class InputProvider : MonoBehaviour
 {
-    [SerializeField] private FighterCore P1FighterCore;
-    [SerializeField] private FighterCore P2FighterCore;
-
     [SerializeField] private List<KeyCode> P1InputKeys;
     [SerializeField] private List<KeyCode> P2InputKeys;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
+    // ! 入力による操作イベント
 
     float p1MoveInputValue;
     float p2MoveInputValue;
@@ -41,8 +34,7 @@ public class InputProvider : MonoBehaviour
     private static Subject<(int,Unit)> _onBlockKeyDown = new();
     public static IObservable<(int,Unit)> OnBlockKeyDown => _onBlockKeyDown;
 
-    // Update is called once per frame
-    void Update()
+    public void AcceptInput()
     {
             // * Player 1 controls
             p1MoveInputValue = 0f;
