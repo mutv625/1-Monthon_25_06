@@ -1,4 +1,4 @@
-enum FighterID
+public enum FighterID
 {
     Default,
     Alex,

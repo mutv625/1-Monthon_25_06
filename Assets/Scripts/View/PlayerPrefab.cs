@@ -1,16 +1,14 @@
 using UnityEngine;
 
+/// <summary>
+/// プレイヤーの体・Viewにあたる
+/// </summary>
 public class PlayerPrefab : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public PlayerCore PlayerCore { get; private set; }
 
-    // Update is called once per frame
-    void Update()
+    public void Initialize(PlayerCore playerCore)
     {
-        
+        PlayerCore = playerCore;
     }
 }
