@@ -359,7 +359,6 @@ GameObject:
   - component: {fileID: 641882523}
   - component: {fileID: 641882522}
   - component: {fileID: 641882521}
-  - component: {fileID: 641882520}
   - component: {fileID: 641882519}
   m_Layer: 0
   m_Name: Player2
@@ -385,18 +384,6 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   skills: []
---- !u!114 &641882520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641882518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 535ed5cae35bad245b00cc2e13fb129c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &641882521
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -811,7 +798,6 @@ GameObject:
   - component: {fileID: 1307663640}
   - component: {fileID: 1307663639}
   - component: {fileID: 1307663638}
-  - component: {fileID: 1307663637}
   - component: {fileID: 1307663636}
   m_Layer: 0
   m_Name: Player1
@@ -838,18 +824,6 @@ MonoBehaviour:
   jumpForce: 5
   skills:
   - {fileID: 11400000, guid: c3f78da4d288a7b46a7f2037b1305c0a, type: 2}
---- !u!114 &1307663637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307663635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 535ed5cae35bad245b00cc2e13fb129c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &1307663638
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
