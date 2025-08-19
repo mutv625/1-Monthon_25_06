@@ -7,7 +7,7 @@ using System.Collections.Generic;
 public class FightingEntryPoint : MonoBehaviour
 {
     [SerializeField] private PlayerPrefab playerPrefab;
-    private List<PlayerKeyConfig> playerKeyConfigs;
+    [SerializeField] private InputProvider inputProvider;
 
     [Header("View Only")]
     [SerializeField] private PlayerPrefab playerP1;

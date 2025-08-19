@@ -1,14 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx;
 
-public class InputProvider
+// 入力は View だと信じて
+public class InputProvider : MonoBehaviour
 {
-    private PlayerCore playerCore;
-    private PlayerKeyConfig playerKeyConfig;
+    [SerializeField] private List<PlayerKeyConfig> playerKeyConfigs;
 
-    public InputProvider(PlayerCore playerCore)
+    public Subject<Unit> On
+
+    public void InitializeForEach(List<PlayerCore> playerCores)
     {
-        this.playerCore = playerCore;
+        foreach (var playerCore in playerCores)
+        {
+
+        }
     }
+
+
 
 }

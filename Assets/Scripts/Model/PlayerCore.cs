@@ -1,4 +1,5 @@
 using UnityEngine;
+using UniRx;
 
 /// <summary>
 /// プレイヤーの脳・Modelにあたる
@@ -13,4 +14,15 @@ public class PlayerCore
         PlayerId = playerId;
         FighterId = fighterId;
     }
+
+
+    public void Move(float x)
+    {
+        // プレイヤーの行動を実行する処理
+    }
+    public void Jump()
+    {
+        // ジャンプの処理
+    }
+
 }

@@ -5,8 +5,8 @@ public class PlayerKeyConfig : ScriptableObject
 {
     public int playerId;
 
-    public KeyCode moveUpKey;
-    public KeyCode moveDownKey;
+    public KeyCode jumpKey;
+    public KeyCode guardKey;
     public KeyCode moveLeftKey;
     public KeyCode moveRightKey;
     public KeyCode attackAKey;
